@@ -1,0 +1,85 @@
+/*INPUT FIELD - nested flex item*/
+  .input_container{
+    display: flex;
+    background-color: #36454F;
+    margin: .5rem;
+    width: 700px;
+    flex-grow: 1;
+    justify-content: flex-end; /*items justif'd starting at main axis end*/
+    align-items: flex-end; /*items are justified at end of cross-axis*/
+    border-radius: .5rem;
+  }
+
+  .text_input{
+    height: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    border: none; /*removes any default border that browser may have applied*/
+    box-sizing: border-box; /*alt how total box size is calc, incld borders*/
+    flex-grow: 1;
+    resize: none; /* Prevent user from resizing text area */
+    background-color: transparent;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+  .input_button{
+    aspect-ratio: 1 / 1; /* Aspect ratio of 1:1 creates a square */
+    width: 10%;
+    background-color: #992600;
+    color: white;
+    border-radius: .5rem;
+  }
+
+
+  /*DISPLAY WINDOW*/
+
+  .display_window{
+    background-color: #899499;
+    color: white;
+    margin: 5px;
+    width: 700px;
+    flex-grow: 4;
+    overflow: auto; /* Enable scrolling when content overflows */
+    box-sizing: border-box; /*alt how total box size is calc, incld borders*/
+    padding: 10px; /* Optional padding for visual spacing */
+    font-size: 1rem;
+    border-radius: .5rem;
+  }
+
+  .opt_buttons{
+    background-color: red;
+    margin: 5px;
+    width: 700px;
+    height: 70px;
+    border-radius: 5px;
+  }
+
+  /*GRID CONTAINER FOR BUTTONS*/
+  .gr_contain_buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*creates 4 grid col 1fr width*/
+    grid-auto-rows: 1fr; /*specify row height for all rows added*/
+    grid-gap: 10px; /*sets column and row gap*/
+    align-content: center;
+    height: 100%; /*height is 100% of the parent flex element*/
+    background-color: pink;
+    border-radius: 5px;
+  }
+
+  /*GRID ITEMS IN THIS CASE THE BUTTONS*/
+  /*No justifications applied to items indside of grid container*/
+
+
+  /* MAIN APP FLEX BOX CONTAINER */
+  .container {
+    display: flex; /* Use flexbox for layout */
+    width: 100%; /* Container takes full width */
+    height: 95vh;
+    background-color: #c0c0c0;
+    /*justify-content: center; /*content justified along main axis*/
+    /*align-items: stretch; /*items aligned across cross axis*/
+    flex-direction: column;/*main axis is vertical*/
+    align-items: center; /*items are centered along cross-axis*/
+    justify-content: flex-end; /*items justif'd starting at main axis end*/
+  }

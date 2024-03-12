@@ -1,0 +1,16 @@
+  /* Reset stylesheet */
+.main_page {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  height: 95vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.topnav {
+  background-color: #ff9900;
+  height: 5vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
