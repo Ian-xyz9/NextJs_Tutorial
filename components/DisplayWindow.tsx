@@ -1,10 +1,9 @@
-import React from 'react';
+"use client";
 import styles from '../styles/main_app.module.css';
 
-const DisplayWindow: React.FC = () => {
+export default function DisplayWindow() {
+  
   return (
-    <div className={styles.display_window}>display window</div>
+    <p className={styles.display_window}>Display Window Placeholder</p>
   );
-}
-
-export default DisplayWindow;
+};

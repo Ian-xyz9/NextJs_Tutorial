@@ -5,7 +5,15 @@ import DisplayWindow from '../components/DisplayWindow';
 //Need to load button state from db
 //Load display window state from browser storage api
 
-export default function Page() {
+//TODO - Retrieve data from textarea compoenent via callback
+const fetchclientData = async (data: string): Promise<string> => {
+  'use server';
+  console.log(`data from client in server: ${data}`);
+  return data;
+}
+
+export default async function Page() {
+  
   return (
     <>
       <div className={styles.container}>
@@ -22,7 +30,7 @@ export default function Page() {
               <button>button 8</button>
             </div>
           </div>
-            <TextareaComponent />
+            <TextareaComponent fetchclientData = {fetchclientData}/>  
       </div>
     </>
   );
